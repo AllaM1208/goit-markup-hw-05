@@ -35,7 +35,7 @@
 --footer-socials-icon-background-color-1: #4D5AE5;
 --footer-socials-icon-background-hover-focus: #31D0AA;
 
-
+--header-nav-color-hover-focus: #404BBF;
 
 
 }
@@ -148,12 +148,26 @@ ul {
     padding-top: 24px;
     padding-bottom: 24px; 
     display: block;
+    position: relative;
 }
    
 .header-nav:hover,
 .header-nav:focus { 
     color: var(--text-color-change-1);    
 } 
+
+.header-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--header-nav-color-hover-focus);  
+}
 
 .contact {
     font-style: normal;
@@ -249,8 +263,8 @@ ul {
 
 .features {
     padding-top: 120px;
-    padding-bottom: 120px;
-   }
+    padding-bottom: 120px; 
+       }
 
 .container-features-title {
     display: flex;    
