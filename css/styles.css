@@ -156,18 +156,23 @@ ul {
     color: var(--text-color-change-1);    
 } 
 
-.header-nav-link::after {
+.header-nav:after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
 
     display: block;
-    width: 40px;
+    width: 100%;
     height: 4px;
-    border-radius: 4px;
-    background-color: var(--header-nav-color-hover-focus);  
+    border-radius: 2px;
 }
+
+.header-nav:hover:after,
+.header-nav:focus:after {
+    background-color: var(--header-nav-color-hover-focus);
+    }
+
 
 .contact {
     font-style: normal;
