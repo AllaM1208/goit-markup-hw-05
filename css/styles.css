@@ -606,6 +606,24 @@ ul {
 
 /* ======== portfolio ======= */
 
+
+
+/* =============================== */
+  /*  header section portfolio */
+
+.portfolio-active {
+    color: var(--text-color-change-1);
+}
+
+.portfolio-active:after,
+.portfolio-active:hover::after,
+.portfolio-active:focus::after {
+    background-color: var(--header-nav-color-hover-focus);
+}
+
+   /*  header section portfolio */
+/* =============================== */
+
 /* =============================== */
   /*  Filters button section 1  */
 
