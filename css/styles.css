@@ -173,6 +173,15 @@ ul {
     background-color: var(--header-nav-color-hover-focus);
     }
 
+.studio-active {
+    color: var(--text-color-change-1);
+}
+
+.studio-active:after,
+.studio-active:hover::after,
+.studio-active:focus::after {
+    background-color: var(--header-nav-color-hover-focus);
+}
 
 .contact {
     font-style: normal;
