@@ -37,8 +37,8 @@
 
 --header-nav-color-hover-focus: #404BBF;
 
---team-label-background-hover-focus: #4D5AE5;
---team-label-color-text-hover-focus: #F4F4FD;
+--overlay-label-background-hover-focus: #4d5ae5ea;
+--overlay-label-color-text-hover-focus: #F4F4FD;
 
 --modal-idx: 10;
 --modal-window-background-color: #FCFCFC;
@@ -789,14 +789,13 @@ ul {
     padding-top: 40px;
     padding-bottom: 40px;
 
-    background-color: var(--team-label-background-hover-focus);
-    color: var(--team-label-color-text-hover-focus);
+    background-color: var(--overlay-label-background-hover-focus);
+    color: var(--overlay-label-color-text-hover-focus);
 }
 
 .project-card-title {   
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-text-color-1);
     margin-bottom: 8px;
