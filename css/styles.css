@@ -88,9 +88,12 @@ ul {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-  
-}
+  }
 
+.project-card-box {
+    position: relative;
+    overflow: hidden;
+}
        
 /* =========================== */
         /*header section*/
@@ -729,9 +732,6 @@ ul {
     width: calc((100% - 48px) / 3);
 }
 
-.project-card-item:hover .overlay-label {
-    transform: translateY(0);
-}
 
 
 .project-card-container-item {
@@ -742,7 +742,7 @@ ul {
 
 .project-card-link {
     display: block;
-
+    
     transition-property: color, background-color, box-shadow;
     transition: var(--animation-transition);
     transition-timing-function: var(--transition-timing-function);
@@ -751,8 +751,8 @@ ul {
 .project-card-link:hover,
 .project-card-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-                0px 1px 1px rgba(46, 47, 66, 0.16),
-                0px 2px 1px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-card-box {
@@ -767,12 +767,22 @@ ul {
     width: 100%;
     height: 100%;
     transform: translateY(100%);
-
     display: flex;
+    transition: var(--animation-transition);
+}
 
+.project-card-item:hover .overlay {
+    transform: translateY(0);
 }
 
 .overlay-label {  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;   
+    letter-spacing: 0.02em;
+
     padding-right: 32px;
     padding-left: 32px;
     padding-top: 40px;
