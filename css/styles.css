@@ -771,7 +771,8 @@ ul {
     transition: var(--animation-transition);
 }
 
-.project-card-item:hover .overlay {
+.project-card-item:hover .overlay,
+.project-card-item:focus .overlay {
     transform: translateY(0);
 }
 
