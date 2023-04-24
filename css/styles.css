@@ -819,8 +819,16 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
+
     z-index: var(--modal-idx);
     background: rgba(46, 47, 66, 0.4);
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+
+    transition: opacity var(--animation-transition),
+                visibility var(--animation-transition);
  }
 
 .is-hidden {
