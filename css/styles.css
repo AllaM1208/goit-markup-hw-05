@@ -814,31 +814,22 @@ ul {
 /* =============================== */
          /* modal window */
 
- .backdrop {
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-
+    
+    z-index: var(--modal-idx);
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
 
-    z-index: var(--modal-idx);
-    background-color: rgba(46, 47, 66, 0.4);
-    transition: opacity 500ms cubic-bezier(0.23, 0.12, 0.32, 0.97),
-                visibility 500ms cubic-bezier(0.23, 0.12, 0.32, 0.97);
-
+    background-color: rgba(46, 47, 66, 0.4);   
    }
 
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;   
-} 
-
- .modal {
+.modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -852,23 +843,29 @@ ul {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
  }
-
- .backdrop.is-hidden .modal {
-    
-}
-
- .modal-button {
+     
+.modal-button {
     display: block;
     margin-left: auto;
     width: 24px;
     height: 24px;
-
+     
     background: var(--modal-window-button-background);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
- }
+}
 
- .modal-icon {
+.is-hidden {
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;   
+} 
+    
+.backdrop.is-hidden .modal {
+       
+}
+
+.modal-icon {
 
  }
