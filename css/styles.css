@@ -47,7 +47,8 @@
 --animation-transition: 250ms;
 --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-
+--mobal-animation-transition: 250ms;
+--modal-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* =========================================== */
@@ -820,16 +821,16 @@ ul {
     right: 0;
     bottom: 0;
 
-    z-index: var(--modal-idx);
-    background: rgba(46, 47, 66, 0.4);
-
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
 
-    transition: opacity var(--animation-transition),
-                visibility var(--animation-transition);
- }
+    z-index: var(--modal-idx);
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 500ms cubic-bezier(0.23, 0.12, 0.32, 0.97),
+                visibility 500ms cubic-bezier(0.23, 0.12, 0.32, 0.97);
+
+   }
 
 .is-hidden {
     opacity: 0;
@@ -839,17 +840,22 @@ ul {
 
  .modal {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+       
     width: 408px;
     min-height: 576px;
     padding: 24px;
-
-    top: calc(50% - 288px);
-    left: calc(50% - 204px);
    
     background: var(--modal-window-background-color);  
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
  }
+
+ .backdrop.is-hidden .modal {
+    
+}
 
  .modal-button {
     display: block;
