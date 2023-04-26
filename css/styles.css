@@ -829,7 +829,7 @@ ul {
     z-index: var(--modal-idx);
     background-color: rgba(46, 47, 66, 0.4);
 
-    transition: opacity 200ms ease, visibility 200ms ease;
+    transition: opacity 400ms ease, visibility 400ms ease;
 }
 
 .modal {
@@ -838,11 +838,11 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%) rotate(0) scale(1);
     opacity: 1;
-
+    
     width: 408px;
     min-height: 576px;
     padding: 24px;
-
+    
     background: var(--modal-window-background-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -851,8 +851,8 @@ ul {
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) rotate(360deg) scale(0.2);
     opacity: 0;
+    transform: translate(-50%, -50%) rotate(360deg) scale(0.2);
 }
 
 .is-hidden {
@@ -861,6 +861,11 @@ ul {
     pointer-events: none;
 
     transition-delay: 400ms;
+}
+
+.backdrop.is-hidden .modal {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(360deg) scale(0.2);
 }
 
 .modal-button {
