@@ -561,8 +561,11 @@ ul {
 
 .footer-container {
     display: flex;
-    align-items: baseline;
-    gap: 120px
+    align-items: baseline;   
+}
+
+.footer-logo-container {
+        margin-right: 120px;
 }
 
 .footer-section-text {  
