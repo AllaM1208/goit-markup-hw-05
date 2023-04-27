@@ -773,8 +773,8 @@ ul {
     transition-duration: var(--animation-transition);
 }
 
-.project-card-item:hover .overlay,
-.project-card-item:focus .overlay {
+.project-card-link:hover .overlay,
+.project-card-link:focus .overlay {
     transform: translateY(0);
 }
 
