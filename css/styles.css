@@ -170,7 +170,7 @@ ul {
     position: relative;
 
     transition-property: color, background-color;
-    transition: var(--animation-transition);
+    transition-duration: var(--animation-transition);
     transition-timing-function: var(--transition-timing-function);
 }
    
@@ -191,14 +191,9 @@ ul {
     border-radius: 2px;
 
     transition-property: color, background-color;
-    transition: var(--animation-transition);
+    transition-duration: var(--animation-transition);
     transition-timing-function: var(--transition-timing-function);
 }
-
-.header-nav:hover:after,
-.header-nav:focus:after {
-    background-color: var(--header-nav-color-hover-focus);
-    }
 
 .studio-active {
     color: var(--text-color-change-1);
@@ -223,7 +218,7 @@ ul {
     color: var(--dark-text-color-2);
 
     transition-property: color, background-color;
-    transition: var(--animation-transition);
+    transition-duration: var(--animation-transition);
     transition-timing-function: var(--transition-timing-function);
 }
 
@@ -296,7 +291,7 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
     transition-property:color, background-color, box-shadow;
-    transition: var(--animation-transition);
+    transition-duration: var(--animation-transition);
     transition-timing-function: var(--transition-timing-function);
 }
 
@@ -481,7 +476,7 @@ ul {
     border-radius: 50%;
 
     transition-property: color, background-color;
-    transition: var(--animation-transition);
+    transition-duration: var(--animation-transition);
     transition-timing-function: var(--transition-timing-function);
 }
 
@@ -538,7 +533,7 @@ ul {
     color: var(--clients-icon-color-1);
 
     transition-property: color, background-color;
-    transition: var(--animation-transition);
+    transition-duration: var(--animation-transition);
     transition-timing-function: var(--transition-timing-function);
 }
  
@@ -618,7 +613,7 @@ ul {
     border-radius: 50%;
 
     transition-property: color, background-color;
-    transition: var(--animation-transition);
+    transition-duration: var(--animation-transition);
     transition-timing-function: var(--transition-timing-function);
 }
 
@@ -706,7 +701,7 @@ ul {
     padding: 12px 24px;
 
     transition-property: color, background-color, box-shadow;
-    transition: var(--animation-transition);
+    transition-duration: var(--animation-transition);
     transition-timing-function: var(--transition-timing-function);
 }
 
@@ -750,7 +745,7 @@ ul {
     display: block;
     
     transition-property: color, background-color, box-shadow;
-    transition: var(--animation-transition);
+    transition-duration: var(--animation-transition);
     transition-timing-function: var(--transition-timing-function);
 }
 
@@ -774,7 +769,7 @@ ul {
     height: 100%;
     transform: translateY(100%);
     display: flex;
-    transition: var(--animation-transition);
+    transition-duration: var(--animation-transition);
 }
 
 .project-card-item:hover .overlay,
@@ -880,7 +875,7 @@ ul {
     cursor: pointer;
 
     transition-property: color, background-color;
-    transition: var(--animation-transition);
+    transition-duration: var(--animation-transition);
     transition-timing-function: var(--transition-timing-function);
 }
 
